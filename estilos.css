@@ -48,11 +48,9 @@ img{
     display: grid;
     grid-template-columns: 12em 12em 12em;
     grid-template-rows: 12em 12em 12em; 
-    min-height: 100vh;
     width: 50%;
     list-style: none; 
-    padding: 0; 
-    margin: 0;
+   
 
 }
 .servico1{
