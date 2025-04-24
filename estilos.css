@@ -8,6 +8,7 @@ header img{
 .menu{
     display: flex;
     justify-content: space-around;
+    list-style: none;
 }
 a{
     color:rgb(255, 255, 255);
@@ -20,7 +21,6 @@ li img{
     width: 2em;
     height: 2em;
     border-radius: 50%;
-    
     margin-left: 2em;
 }
 img{
@@ -50,7 +50,6 @@ img{
     grid-template-rows: 12em 12em 12em; 
     min-height: 100vh;
     width: 50%;
-    gap: px;
     list-style: none; 
     padding: 0; 
     margin: 0;
@@ -103,13 +102,59 @@ img{
     body {
         background-color: rgb(75, 75, 75);
     }
+    #servicos {
+        display: grid;
+        grid-template-columns: 12em 12em 12em 12em;
+        grid-template-rows: 12em 12em 12em 12em; 
+        min-height: 100vh;
+        width: 50%;
+        list-style: none; 
+        padding: 0; 
+        margin: 0;
+    
+    }
+    .titulosev{
+        display: flex;
+        font-style: italic;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .servico1{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .servico2{
+        display: flex;
+        font-style: italic;
+        font-weight: bold;;
+        background-color: rgb(11, 194, 250);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .servico3{
+        display: flex;
+        font-style: italic;
+        font-weight: bold;
+        background-color: rgb(79, 80, 80);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 4;
+    }
 
 }
 @media (min-width: 601px) and (max-width: 900px) {
     body {
         background-color: rgb(124, 124, 124);
     }
-
 }
 @media (min-width: 901px){
     body{
