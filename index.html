@@ -4,59 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia</title>
-    <link rel="stylesheet" href="estilos.css"
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<header> <img id="logo" srcset="logo.webp" alt="Logo Git"> </header>
+
+<header>
+    <img class="imagem__logo" srcset="logo.webp" alt="Logo Git">
+</header>
 <body>
     <section id="home">
-        <h1 class="home">Boas-vindas a agência PH</h1>
+        <h1 class="home__Boas">Boas-vindas a agência PH</h1>
     </section>
-    <!--MENU DE NAVEGAÇÂO-->
-    <nav>
-        <ul class="menu">
-            <li><a href="sobre.html">Sobre Mim</a></li>
-            <li><a href="projetos.html">Serviços</a></li>
-            <li><a href="contato.html">Contato</a></li>
+<!--MENU DE NAVEGAÇÂO-->
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href=".sobre" class="menu__link"> Sobre Mim</a></li>
+            <li class="menu__item"><a href=".projetos"class="menu__link">Serviços</a></li>
+            <li class="menu__item"><a href=".contato" class="menu__link">Contato</a></li>
         </ul>
     </nav>    
-    <!--/MENU DE NAVEGAÇÂO-->
+<!--/MENU DE NAVEGAÇÂO-->
 
 <!--SOBRE MIM-->
-        <section id="sobre">
-            <h2>Sobre: </h2>
-            <h5>Somos uma Agencia focada em Serviços WEB</h5> 
+        <section class="sobre">
+            <h2 class="sobre__titulo__mim">Sobre: </h2>
+            <p class="sobre__mim">Na Agência PH, transformamos ideias em experiências digitais incríveis.
+            Somos uma agência jovem, criativa e apaixonada por tecnologia. Criada por Pedro Ancelotti, a PH nasceu com um propósito claro: 
+            oferecer soluções web personalizadas, acessíveis e com identidade. Do design ao código, cuidamos de cada detalhe para entregar sites,
+            sistemas e interfaces que realmente conectam com o público.</p> 
         </section>
 <!--/SOBRE MIM-->
 
 <!--SERVIÇOS DISPONIVEIS-->
-        <section id ="servicos">
-            <h2 class="titulosev">Serviços</h2>
-                    <li class="servico1"><img srcset="designgrafico.webp" alt="Foto Desing">Desing gráfico</li>
-                    <li class="servico2"><img srcset="web.webp" alt="desenvolvimento">desenvolvimento WEB</li>
-                    <li class="servico3"><img srcset="Brading.png" alt="Brading">Brading</li>
+        <section class ="servicos">
+        <h2 class="titulo__servicos">Serviços</h2>
+                    <li class="desing">Desing gráfico</li><img class="imagem__Serviços desing"srcset="designgrafico.webp" alt="Foto Desing">
+                    <li class="web">desenvolvimento WEB</li><img class="imagem__Serviços_web"srcset="web.webp" alt="desenvolvimento">
+                    <li class="brading">Brading</li><img class="imagem__Serviços_brading" srcset="Brading.png" alt="Brading">
         </section>
-<!--/SERVIÇOS DISPONIVEIS-->
 
 <!--DEPOIMENTOS-->
-        <section id="Depoimentos">
-            <h2>Depoimentos</h2>
-                <p>CARLOS Alberto: Ótimo atendimento e suporte</p>
-                <p>SILVIO Santos: Serviços de quapdade</p>
-                <p>PAPA: Recomendo a todos</p>    
-        </section>
-<!--/DEPOIMENTOS-->
+        <section class ="Depoimentos">
+            <h2 class ="Depoimentos__Titulo" >Depoimentos</h2>
+            <div class="Carlos">            
+                <h3><img class="Depoimentos__Fotos Nobrega" srcset="122392.jpeg" alt="Nobrega"> Carlos Alberto:</h3>
+                <p>Trabalhar com  a agencia PH é ter a certeza de que o projeto será entregue com qualidade e atenção aos detalhes. Ele sempre vai além do esperado.</p>
+            </div>
+        
+            <div class="Silvio">              
+                <h3><img class="Depoimentos__Fotos" srcset="listas_Silvio-Santos_25set2020_Reprodução.webp" alt="Silvio">Silvio Santos:</h3>
+                <p>A agencia PH tem uma facilidade incrível para aprender novas tecnologias. Em poucas semanas, já estava desenvolvendo soluções em Python que otimizaram nossos processos internos.</p>
+            </div>
 
+            <div class="Papa">
+                <h3><img class="Depoimentos__Fotos" srcset="papa-leao-xiv-reutersyara-nardi.png" alt="Papa">Papa:</h3>
+                <p>Profissionais curiosos, dedicado e com um olhar criativo. O Pedro tem tudo para se destacar no universo da tecnologia.</p>
+            </div>
+        </section>
+
+<!--CONTATO-->
         <section id="contato">
             <h2>Contato</h2>
             <h4>Endereço: R. Brasil</h4>
             <h4>Telefone: (11) 91234-2304</h4>
-            <h4>Email: pedro@gmail.com</h4>
-            <input type="text" class="input" placeholder="Nome" required>
-            <input type="email"class="input" placeholder="Email" required>
-            <input type="text" class="input" placeholder="Mensagem" required>
-            <button type="submit">Enviar</button>
-        </section>    
-    </nav>
-    
+            <h4>Email: pedroh.moliveira20@gmail.com</h4>
+            
+            <input type="text" class="input  input__Nome" placeholder="Nome" required> 
+            <input type="email"class="input  input__Email" placeholder="Email" required>
+            <input type="text" class="input  input__Mensagem" placeholder="Mensagem" required>
+            <button type="submit" class="button__Enviar">Enviar</button>
+            
+        </section>
+<!--RODA-PÉ-->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Pedro Ancelotti. Todos os direitos reservados.</p>
+  </div>
+</footer>
 </body>
 </html>

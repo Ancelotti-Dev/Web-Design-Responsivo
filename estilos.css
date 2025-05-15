@@ -1,59 +1,83 @@
 
-header img{
+.imagem__logo{
     justify-content:  center;
     width: 10em;
-    
+}
+.imagem__Serviços{
+    height: 100px;
+    width: 100px;
+}
+.home__Boas{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3em;
 }
 
-.menu{
+
+/*MENU*/
+.menu__list{
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
-a{
+.menu__link{
     color:rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(20, 1, 1);
+    padding: 10px;
     list-style: none;
     text-decoration: none;
-    border-radius: 30%;
+    border-radius: 40px;
 }
-li img{
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    margin-left: 2em;
-}
-img{
+
+.imagem__logo{
     align-items:center;
     justify-content: center;
 }
 
-.input {
-  font-family: "SF Pro";
-  max-width: 190px;
-  padding: 0.875rem;
-  font-size: 1rem;
-  border: 1.5px solid #000;
-  border-radius: 0.5rem;
-  box-shadow: 2.5px 3px 0 #000;
-  outline: none;
-  transition: ease 0.25s;
+
+
+
+/*SOBRE*/
+.sobre{
+    font-size: 20px;
+    border: 3.5px solid #000000;
+    background-color: #cfcccc;
+    border-radius: 10px;
+    margin-top: 8em;
+}
+.sobre__titulo__mim{
+    margin-bottom: 40px;
+    margin-left: 0.5em;
+    font-size: 3em;
+}
+.sobre__mim{
+    font-size: 30px;
+    margin-left: 1.5em;
 }
 
-.input:focus {
-  box-shadow: 5.5px 7px 0 rgb(255, 0, 0);
-}
+
+
+
+
 /*SERVIÇOS GRID*/
-#servicos {
+.servicos{
     display: grid;
     grid-template-columns: 12em 12em 12em;
-    grid-template-rows: 12em 12em 12em; 
-    width: 50%;
-    list-style: none; 
-   
-
+    grid-template-rows: 12em 12em 12em ; 
+    border: 3.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #0328a1;
+    outline: none;
+    margin-top: 50px;
+    justify-content: space-around;
+    background-color: #cfcccc;
+    margin-bottom: 50px;
 }
-.servico1{
+.titulo__servicos{
+    font-size: 4em;
+    font-weight: bold;
+}
+.desing{
     display: flex;
     background-color: rgb(7, 115, 148);
     border-radius: 10px;
@@ -61,40 +85,154 @@ img{
     grid-column: 1;
     grid-row: 2;
 }
-.servico2{
+.brading{
     display: flex;
-    font-style: italic;
-    font-weight: bold;;
-    background-color: rgb(11, 194, 250);
+    background-color: rgb(7, 115, 148);
     border-radius: 10px;
     padding: 10px;
-    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+.web{
+    display: flex;
+    background-color: rgb(7, 115, 148);
+    border-radius: 10px;
+    padding: 10px;
     grid-column: 3;
     grid-row: 2;
 }
-.servico3{
-    display: flex;
-    font-style: italic;
-    font-weight: bold;
-    background-color: rgb(79, 80, 80);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
+.imagem__Serviços{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.imagem__Serviços_web{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    grid-column: 3;
+    grid-row: 2;
+}
+.imagem__Serviços_brading{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-top: 2.5em;
     grid-column: 2;
     grid-row: 2;
+}
 
+/*DEPOIMENTOS*/
+.Depoimentos{
+    font-size: 2em;
+    padding: 2.875rem;
+    border: 3.5px solid #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 3px 0 #1728c0;
+    outline: none;
+    background-color: #cfcccc;
 }
-.titulosev{
-    display: flex;
-    font-style: italic;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 10px;
+.Depoimentos__Fotos{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+}
+.Silvio{
+    margin-top: 50px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    
+}
+.Carlos{
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    
+}
+.Papa{
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    margin-top: 50px;
+    
+}
+
+#contato{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+/*Formulario de Contato*/
+.input {
+    font-family: "SF Pro";
+    max-width: 190px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+}
+
+.input__Nome:focus {
+    box-shadow: 5.5px 7px 0 rgb(16, 63, 2);
+}
+.input__Email:focus {
+    box-shadow: 5.5px 7px 0 rgba(4, 160, 24, 0.897);
+}
+.input__Mensagem:focus {
+    box-shadow: 5.5px 7px 0 rgb(64, 252, 6);
+}
+.button__Enviar{
+    padding: 0.875rem;
+    font-size: 1rem;
+    max-width: 190px;
+    border-radius: 15%;
+}
+
+
+
+
+
+/*RODAPÈ*/
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
     text-align: center;
-    grid-column: 2;
-    grid-row: 1;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 23px;
+    border-radius: 40px;
 }
-/*/SERVIÇOS GRID*/
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
 
 @media (max-width: 600px) {
     body {
@@ -111,7 +249,7 @@ img{
         margin: 0;
     
     }
-    .titulosev{
+    .tituloserv{
         display: flex;
         font-style: italic;
         font-weight: bold;
@@ -146,8 +284,8 @@ img{
         text-align: center;
         grid-column: 1;
         grid-row: 4;
+        margin-bottom: 100px;
     }
-
 }
 @media (min-width: 601px) and (max-width: 900px) {
     body {
