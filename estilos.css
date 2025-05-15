@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 .imagem__logo{
     justify-content:  center;
@@ -17,7 +20,7 @@
 /*MENU*/
 .menu__list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
 }
 .menu__link{
@@ -53,6 +56,7 @@
 .sobre__mim{
     font-size: 30px;
     margin-left: 1.5em;
+    margin-right: 2em;
 }
 
 
@@ -101,19 +105,18 @@
     grid-column: 3;
     grid-row: 2;
 }
-.imagem__Serviços{
-    width: 5em;
-    height: 5em;
+.imagem__Serviços--desing{
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
     margin-left: 2em;
     margin-top: 2.5em;
     grid-column: 1;
     grid-row: 2;
 }
-
 .imagem__Serviços_web{
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
     margin-left: 2em;
     margin-top: 2.5em;
@@ -121,8 +124,8 @@
     grid-row: 2;
 }
 .imagem__Serviços_brading{
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
     margin-left: 2em;
     margin-top: 2.5em;
@@ -214,7 +217,6 @@
 
 
 
-
 /*RODAPÈ*/
 .footer {
     background-color: #1a1a1a;
@@ -224,10 +226,12 @@
     font-size: 0.9rem;
     margin-top: 23px;
     border-radius: 40px;
+    
 }
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 
@@ -238,54 +242,90 @@
     body {
         background-color: rgb(75, 75, 75);
     }
-    #servicos {
-        display: grid;
-        grid-template-columns: 12em 12em 12em 12em;
-        grid-template-rows: 12em 12em 12em 12em; 
-        min-height: 100vh;
-        width: 50%;
-        list-style: none; 
-        padding: 0; 
-        margin: 0;
-    
+    .servicos{
+    display: grid;
+    grid-template-columns: 12em 12em 12em;
+    grid-template-rows: 12em 12em 12em 12em ; 
+    border: 3.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #0328a1;
+    outline: none;
+    margin-top: 50px;
+    justify-content: space-around;
+    background-color: #cfcccc;
+    margin-bottom: 50px;
     }
-    .tituloserv{
-        display: flex;
-        font-style: italic;
-        font-weight: bold;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .servico1{
+    .imagem__Serviços--desing{
         grid-column: 1;
         grid-row: 2;
     }
-    .servico2{
-        display: flex;
-        font-style: italic;
-        font-weight: bold;;
-        background-color: rgb(11, 194, 250);
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        grid-column: 1;
-        grid-row: 3;
+    .imagem__Serviços_brading{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    grid-column: 1;
+    grid-row: 3;
     }
-    .servico3{
-        display: flex;
-        font-style: italic;
-        font-weight: bold;
-        background-color: rgb(79, 80, 80);
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        grid-column: 1;
-        grid-row: 4;
-        margin-bottom: 100px;
+    .brading{
+    display: flex;
+    background-color: rgb(3, 63, 82);
+    border-radius: 10px;
+    padding: 10px;
+    color: #cfcccc;
+    grid-column: 1;
+    grid-row: 3;
     }
+    .desing{
+    display: flex;
+    background-color: rgb(3, 63, 82);
+    border-radius: 10px;
+    padding: 10px;
+    grid-column: 1;
+    color: #cfcccc;
+    grid-row: 2;
+    }
+    .imagem__Serviços_web{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: 2em;
+    margin-top: 2.5em;
+    grid-column: 1;
+    grid-row: 4;
+    }
+    .web{
+    display: flex;
+    background-color: rgb(3, 63, 82);
+    color: #cfcccc;
+    border-radius: 10px;
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 4;
+    }
+    .Depoimentos{
+    font-size: 1.5em;
+    padding: 2.875rem;
+    border: 3.5px solid #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 3px 0 #1728c0;
+    outline: none;
+    background-color: #cfcccc;
+    }
+    .menu__link{
+    color:rgb(255, 255, 255);
+    background-color: rgb(20, 1, 1);
+    padding: 1.5px;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 40px;
+    }
+    .menu__list{
+    display: block;
+    
+    }
+    
 }
 @media (min-width: 601px) and (max-width: 900px) {
     body {
